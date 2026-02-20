@@ -2,14 +2,10 @@
 
 import { motion } from 'framer-motion'
 import WorkCard from './work-card'
-import homedash from 'public/work/home-new.webp'
-import boce from 'public/work/boce.webp'
-import order from 'public/work/order.webp'
-import music from 'public/work/music.webp'
-import poc from 'public/work/poc.webp'
-import it from 'public/work/it.webp'
-import letter from 'public/work/letter.webp'
-import chat from 'public/work/chat.webp'
+import bangboo from 'public/work/homedash.webp'
+import artrack from 'public/work/boce.webp'
+import lambda from 'public/work/letter.webp'
+import cara from 'public/work/order.webp'
 
 const container = {
   hidden: { opacity: 1 },
@@ -37,76 +33,43 @@ export default function Page() {
     <section>
       <section className="sm:px-14 sm:pt-6">
         <h1 className="mb-2 text-2xl font-medium tracking-tighter">
-          Selected works
+          施工中...
         </h1>
         <p className="prose prose-neutral mb-6 text-sm dark:prose-invert">
           Some projects that might be interesting.
         </p>
         <motion.div variants={container} initial="hidden" animate="visible">
-          <motion.div variants={item}>
-            <WorkCard
-              title={'HomeDash'}
-              description={'A dashboard for home.'}
-              image={homedash}
-              link={'/work/homedash'}
-            />
-          </motion.div>
           <motion.section className={'grid grid-cols-1 gap-4 sm:grid-cols-2'}>
             <motion.div variants={item}>
               <WorkCard
-                title={'Chat'}
-                description={'Chat with AI.'}
-                image={chat}
-                link={'/work/chat'}
+                title={'过往活动合集'}
+                description={'全中国最好玩的AI活动尽在这里。'}
+                image={bangboo}
+                link={'/work/homedash'}
               />
             </motion.div>
             <motion.div variants={item}>
               <WorkCard
-                title={'PoC'}
-                description={'Just a PoC.'}
-                image={poc}
-                link={'/work/poc'}
+                title={'个人作品集'}
+                description={'代表我能力的项目和代码作品。'}
+                image={artrack}
+                link={'/work/portfolio'}
               />
             </motion.div>
             <motion.div variants={item}>
               <WorkCard
-                title={'Letter'}
-                description={'Write letters.'}
-                image={letter}
-                link={'/work/letter'}
-              />
-            </motion.div>
-
-            <motion.div variants={item}>
-              <WorkCard
-                title={'Dial'}
-                description={'A dial test tool.'}
-                image={boce}
-                link={'/work/dial'}
+                title={'过往经历'}
+                description={'从学生到创业者的成长故事。'}
+                image={lambda}
+                link={'/work/experience'}
               />
             </motion.div>
             <motion.div variants={item}>
               <WorkCard
-                title={'Order'}
-                description={'KES order system.'}
-                image={order}
-                link={'/work/order'}
-              />
-            </motion.div>
-            <motion.div variants={item}>
-              <WorkCard
-                title={'Tiny-Music'}
-                description={'A music component.'}
-                image={music}
-                link={'/work/music'}
-              />
-            </motion.div>
-            <motion.div variants={item}>
-              <WorkCard
-                title={'KES-IT'}
-                description={'Network monitoring.'}
-                image={it}
-                link={'/work/it'}
+                title={'我的旅行日记'}
+                description={'走过的每一座城，都是独特的记忆。'}
+                image={cara}
+                link={'/work/travel'}
               />
             </motion.div>
           </motion.section>

@@ -13,7 +13,7 @@ export default async function Page() {
     <section>
       <section className="sm:px-28 sm:pt-8">
         <Image
-          alt={'Hamster1963'}
+          alt={'RX陈容贤'}
           src={avatar}
           height={64}
           width={64}
@@ -23,13 +23,13 @@ export default async function Page() {
           priority
         />
         <h1 className="mb-1 text-xl font-medium tracking-tighter">
-          Hamster1963
+          RX陈容贤
         </h1>
         <p className="prose prose-neutral text-sm dark:prose-invert">
           Developer, guitarist, and creator.
         </p>
         <p className={'mb-6 pt-10 text-lg font-medium tracking-tight'}>
-          👋 Hi, I'm Hamster1963.
+          👋 Hi, I'm RX陈容贤.
           <br />
           Love to write code and write articles.
           <br />
@@ -72,36 +72,39 @@ export default async function Page() {
 }
 
 function Photos() {
-  const photo_1 = desktop
-  const photo_2 = shoe
-  const photo_3 = cloth
-  const photo_4 = home
+  const photo_1 = shoe
+  const photo_2 = desktop
+  const photo_3 = home
+  const photo_4 = cloth
   return (
     <section
       className={
         '-mx-6 overflow-scroll sm:mx-0 sm:flex sm:flex-row sm:justify-center md:overflow-visible'
       }
     >
-      <section className={'relative h-[460px] w-[800px]'}>
+      <section className={'relative h-[520px] w-[800px]'}>
         <div
           style={{
             transform:
               'perspective(1200px) translateX(0px) translateY(0px) scale(1) rotate(-4deg) rotateX(0deg) rotateY(0deg) skewX(0deg) skewY(0deg) translateZ(0px)',
             position: 'absolute',
             left: 'calc(17.75% - 109px)',
-            top: 'calc(48.913% - 138px)',
+            top: 'calc(38.913% - 138px)',
           }}
           className={
             'transform-none-on-hover h-[276px] w-[218px] cursor-pointer rounded-lg border-[8px] border-white shadow-md transition-all duration-300 hover:shadow-xl'
           }
         >
           <Image
-            alt={'photo_1'}
+            alt={'北京朝阳'}
             src={photo_1}
             placeholder="blur"
             fill
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
           />
+          <p className="absolute -bottom-8 left-0 right-0 text-center text-xs text-neutral-500 dark:text-neutral-400">
+            北京朝阳
+          </p>
         </div>
         <div
           style={{
@@ -109,19 +112,22 @@ function Photos() {
               'perspective(1200px) translateX(0px) translateY(0px) scale(1) rotate(1deg) rotateX(0deg) rotateY(0deg) skewX(0deg) skewY(0deg) translateZ(0px)',
             position: 'absolute',
             left: 'calc(40% - 109px)',
-            top: 'calc(58% - 138px)',
+            top: 'calc(48% - 138px)',
           }}
           className={
             'transform-none-on-hover h-[276px] w-[218px] cursor-pointer rounded-lg border-[8px] border-white shadow-md transition-all duration-300 hover:shadow-xl'
           }
         >
           <Image
-            alt={'photo_2'}
+            alt={'英国利兹'}
             src={photo_2}
             placeholder="blur"
             fill
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
           />
+          <p className="absolute -bottom-8 left-0 right-0 text-center text-xs text-neutral-500 dark:text-neutral-400">
+            英国利兹
+          </p>
         </div>
         <div
           style={{
@@ -129,19 +135,22 @@ function Photos() {
               'perspective(1200px) translateX(0px) translateY(0px) scale(1) rotate(0deg) rotateX(0deg) rotateY(0deg) skewX(0deg) skewY(0deg) translateZ(0px)',
             position: 'absolute',
             left: 'calc(64% - 109px)',
-            top: 'calc(38% - 138px)',
+            top: 'calc(28% - 138px)',
           }}
           className={
             'transform-none-on-hover h-[276px] w-[218px] cursor-pointer rounded-lg border-[8px] border-white shadow-md transition-all duration-300 hover:shadow-xl'
           }
         >
           <Image
-            alt={'photo_3'}
-            src={photo_3}
+            alt={'大连的某处海边'}
+            src={cloth}
             placeholder="blur"
             fill
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
           />
+          <p className="absolute -bottom-8 left-0 right-0 text-center text-xs text-neutral-500 dark:text-neutral-400">
+            深圳
+          </p>
         </div>
         <div
           style={{
@@ -149,19 +158,22 @@ function Photos() {
               'perspective(1200px) translateX(0px) translateY(0px) scale(1) rotate(-2deg) rotateX(0deg) rotateY(0deg) skewX(0deg) skewY(0deg) translateZ(0px)',
             position: 'absolute',
             left: 'calc(83% - 109px)',
-            top: 'calc(55% - 138px)',
+            top: 'calc(45% - 138px)',
           }}
           className={
             'transform-none-on-hover h-[276px] w-[218px] cursor-pointer rounded-lg border-[8px] border-white shadow-md transition-all duration-300 hover:shadow-xl'
           }
         >
           <Image
-            alt={'photo_4'}
-            src={photo_4}
+            alt={'深圳'}
+            src={home}
             placeholder="blur"
             fill
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
           />
+          <p className="absolute -bottom-8 left-0 right-0 text-center text-xs text-neutral-500 dark:text-neutral-400">
+            大连的某处海边
+          </p>
         </div>
       </section>
     </section>

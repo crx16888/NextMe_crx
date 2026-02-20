@@ -52,3 +52,6 @@ bun run dev
 ## Page Speed Insights
 
 ![Page Speed Insights](/.github/speed.png)
+
+## 启动开发预览服务器
+npm run dev
