@@ -42,7 +42,7 @@ export default function Page() {
           <motion.section className={'grid grid-cols-1 gap-4 sm:grid-cols-2'}>
             <motion.div variants={item}>
               <WorkCard
-                title={'过往活动合集'}
+                title={'Founder@FluxVerse南京'}
                 description={'全中国最好玩的AI活动尽在这里。'}
                 image={bangboo}
                 link={'/work/homedash'}
