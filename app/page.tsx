@@ -38,7 +38,7 @@ export default async function Page() {
         </p>
         <NowPlayingInit />
         <div className={'mt-6 flex items-center'}>
-          <Link href="https://github.com/hamster1963" target="_blank">
+          <Link href="http://github.com/crx16888?tab=repositories" target="_blank">
             <button
               className={
                 'mr-4 flex items-center justify-center rounded-xl border-[0.5px] border-neutral-200 p-2 text-xs font-medium shadow-[0_2px_2px_rgba(0,0,0,0.04)] transition-all duration-300 hover:bg-stone-100 hover:shadow-none dark:border-neutral-700 dark:bg-neutral-700/20 dark:hover:bg-neutral-900/20'
@@ -50,19 +50,11 @@ export default async function Page() {
           </Link>
           <span className="mr-2 h-2 w-2 rounded-full bg-blue-500"></span>
           <Link
-            href={'https://home.buycoffee.top'}
+            href={'https://www.xiaohongshu.com/user/profile/6391f58e000000001f015a1b'}
             target="_blank"
             className="text-xs font-medium"
           >
-            Monitor
-          </Link>
-          <p className="mx-1 text-xs font-medium">/</p>
-          <Link
-            href={'https://changelog.buycoffee.top'}
-            target="_blank"
-            className="text-xs font-medium"
-          >
-            Changelog
+            小红书
           </Link>
         </div>
       </section>

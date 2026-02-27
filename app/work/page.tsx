@@ -42,16 +42,16 @@ export default function Page() {
           <motion.section className={'grid grid-cols-1 gap-4 sm:grid-cols-2'}>
             <motion.div variants={item}>
               <WorkCard
-                title={'Founder@FluxVerse南京'}
-                description={'全中国最好玩的AI活动尽在这里。'}
+                title={'FluxVerse南京'}
+                description={'创办了全南京最好的创新创业生态组织'}
                 image={bangboo}
                 link={'/work/homedash'}
               />
             </motion.div>
             <motion.div variants={item}>
               <WorkCard
-                title={'个人作品集'}
-                description={'代表我能力的项目和代码作品。'}
+                title={'转点 AIFlux'}
+                description={'全中国最酷的AI活动，尽在这里。'}
                 image={artrack}
                 link={'/work/portfolio'}
               />
@@ -59,7 +59,7 @@ export default function Page() {
             <motion.div variants={item}>
               <WorkCard
                 title={'过往经历'}
-                description={'从学生到创业者的成长故事。'}
+                description={'从20年到26年我的一些经历缩影'}
                 image={lambda}
                 link={'/work/experience'}
               />
@@ -67,7 +67,7 @@ export default function Page() {
             <motion.div variants={item}>
               <WorkCard
                 title={'我的旅行日记'}
-                description={'走过的每一座城，都是独特的记忆。'}
+                description={'一些摄影和随笔记录'}
                 image={cara}
                 link={'/work/travel'}
               />

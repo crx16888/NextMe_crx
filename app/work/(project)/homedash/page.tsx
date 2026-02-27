@@ -330,7 +330,7 @@ export default function Page() {
         <h1 className="mb-4 text-2xl font-medium tracking-tighter transition-opacity hover:opacity-50" style={{ color: '#1D1D1F' }}>
           <Link href="/work" className="flex items-center justify-start gap-2">
             <BackIcon />
-            Founder@FluxVerse南京
+            FluxVerse南京
           </Link>
         </h1>
         <p className="mb-8 text-base font-bold tracking-widest" style={{ color: '#1D1D1F' }}>

@@ -12,7 +12,7 @@ export default function Page() {
           </Link>
         </h1>
         <p className="prose prose-neutral mb-6 text-sm dark:prose-invert">
-          走过的每一座城，都是独特的记忆。
+          一些摄影和随笔记录
         </p>
         <p className="prose prose-neutral dark:prose-invert leading-relaxed mb-8 md:mb-12">
           【旅行日记 - 请修改】
