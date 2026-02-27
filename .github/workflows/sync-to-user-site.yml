@@ -19,7 +19,10 @@ jobs:
         run: bun install
 
       - name: Build static export
-        run: DEPLOY_TARGET=user-site bun run build
+        run: bun run build
+
+      - name: Add .nojekyll
+        run: touch out/.nojekyll
 
       - name: Checkout target user-site repo
         uses: actions/checkout@v4
@@ -28,10 +31,9 @@ jobs:
           token: ${{ secrets.USER_SITE_PAT }}
           path: user-site
 
-      - name: Sync build output into /NextMe_crx
+      - name: Sync build output into repo root
         run: |
-          mkdir -p user-site/NextMe_crx
-          rsync -av --delete out/ user-site/NextMe_crx/
+          rsync -av --delete --exclude '.git' out/ user-site/
 
       - name: Commit and push if changed
         run: |
