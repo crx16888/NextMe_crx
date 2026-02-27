@@ -4,8 +4,12 @@ const bundleAnalyzer = withBundleAnalyzer({
   enabled: process.env.ANALYZE === 'true',
 })
 
+const isUserSiteDeploy = process.env.DEPLOY_TARGET === 'user-site'
+
 const nextConfig = {
   output: 'export',
+  basePath: isUserSiteDeploy ? '/NextMe_crx' : undefined,
+  assetPrefix: isUserSiteDeploy ? '/NextMe_crx/' : undefined,
   images: {
     unoptimized: true,
   },
